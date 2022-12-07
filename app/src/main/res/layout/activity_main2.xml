@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comm.MainActivity2"
+    android:background="#332973">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="275dp"
+            android:layout_height="157dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="249dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center_horizontal"
+            android:text="WorldCinema"
+            android:textColor="#EE4113"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="65dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textWebEmailAddress"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"/>
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="Пароль"
+                android:inputType="textWebPassword"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#EF3A01"
+                android:text="Войти"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#332973"
+                android:text="Регистрация"
+                android:textColor="#EF3A01" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

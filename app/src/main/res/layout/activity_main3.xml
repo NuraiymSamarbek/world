@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".comm.MainActivity3"
+    android:background="#332973">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="182dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="WorldCinema"
+            android:textColor="#EE4113"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Имя"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <EditText
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Фамилия"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                android:textAllCaps="false"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <EditText
+                android:id="@+id/Email3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="E-mail"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                android:textAllCaps="false"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+
+            <EditText
+                android:id="@+id/Password3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="numberPassword"
+                android:hint="Пароль"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+
+
+            <EditText
+                android:id="@+id/PovPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="numberPassword"
+                android:hint="Повторите пароль"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnreg"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#FB5628"
+                android:text="Зарегистрироваться"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAccount"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#332973"
+                android:text="У меня уже есть аккаунт"
+                android:textColor="#FB5628"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
